@@ -1,0 +1,98 @@
+<!----------------------------------------------------->
+<!--                  Zack Snoen-->
+<!--              ZackSnoen@gmail.com-->
+<!-- Copyright 2021, Zack Snoen, All rights reserved.-->
+<!----------------------------------------------------->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- css file -->
+        <link href="styles.css" rel="stylesheet">
+        
+        <title>Change</title>
+
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Arch Linux</header>
+            <ul>
+                <li><a class="nav-link" href="#Simplicity">Simplicity</a></li>
+                <li><a class="nav-link" href="#Modernity">Modernity</a></li>
+                <li><a class="nav-link" href="#Pragmatism">Pragmatism</a></li>
+                <li><a class="nav-link" href="#User_Centrality">User Centrality</a></li>
+                <li><a class="nav-link" href="#Versatility">Versatility</a></li>
+                <li><a class="nav-link" href="#Code_Snippets">Code Snippets</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+        <!-- REQUIREMENTS: 5 <section class="main-section" id=<header text>
+                           10 <p> in .main-section
+                           5 <code> in .main-section
+                           5 <li> in .main-section
+        -->
+            <section class="main-section" id="Simplicity">
+                <header>Simplicity</header>
+                <p>
+                    Arch Linux defines simplicity as without unnecessary additions or modifications. It ships software as released by the original developers (upstream) with minimal distribution-specific (downstream) changes: patches not accepted by upstream are avoided, and Arch's downstream patches consist almost entirely of backported bug fixes that are obsoleted by the project's next release.
+                </p>
+                <p>
+                    In a similar fashion, Arch ships the configuration files provided by upstream with changes limited to distribution-specific issues like adjusting the system file paths. It does not add automation features such as enabling a service simply because the package was installed. Packages are only split when compelling advantages exist, such as to save disk space in particularly bad cases of waste. GUI configuration utilities are not officially provided, encouraging users to perform most system configuration from the shell and a text editor. 
+                </p>
+            </section>
+            <section class="main-section" id="Modernity">
+                <header>Modernity</header>
+                <p>
+                    Arch Linux strives to maintain the latest stable release versions of its software as long as systemic package breakage can be reasonably avoided. It is based on a rolling-release system, which allows a one-time installation with continuous upgrades.
+                </p>
+                <p>
+                    Arch incorporates many of the newer features available to GNU/Linux users, including the systemd init system, modern file systems, LVM2, software RAID, udev support and initcpio (with mkinitcpio), as well as the latest available kernels.
+                </p>
+            </section>
+            <section class="main-section" id="Pragmatism">
+                <header>Pragmatism</header>
+                <p>
+                    Arch is a pragmatic distribution rather than an ideological one. The principles here are only useful guidelines. Ultimately, design decisions are made on a case-by-case basis through developer consensus. Evidence-based technical analysis and debate are what matter, not politics or popular opinion.
+                </p>
+                <p>
+                    The large number of packages and build scripts in the various Arch Linux repositories offer free and open source software for those who prefer it, as well as proprietary software packages for those who embrace functionality over ideology. 
+                </p>
+            </section>
+            <section class="main-section" id="User_Centrality">
+                <header>User Centrality</header>
+                <p>
+                    Whereas many GNU/Linux distributions attempt to be more user-friendly, Arch Linux has always been, and shall always remain user-centric. The distribution is intended to fill the needs of those contributing to it, rather than trying to appeal to as many users as possible. It is targeted at the proficient GNU/Linux user, or anyone with a do-it-yourself attitude who is willing to read the documentation, and solve their own problems.
+                </p>
+                <p>
+                    All users are encouraged to participate and contribute to the distribution. Reporting and helping fix bugs is highly valued and patches improving packages or the core projects are very appreciated: Arch's developers are volunteers and active contributors will often find themselves becoming part of that team. Archers can freely contribute packages to the Arch User Repository, improve the ArchWiki documentation, provide technical assistance to others or just exchange opinions in the forums, mailing lists, or IRC channels. Arch Linux is the operating system of choice for many people around the globe, and there exist several international communities that offer help and provide documentation in many different languages. 
+                </p>
+            </section>
+            <section class="main-section" id="Versatility">
+                <header>Versatility</header>
+                <p>
+                    Arch Linux is a general-purpose distribution. Upon installation, only a command-line environment is provided: rather than tearing out unneeded and unwanted packages, the user is offered the ability to build a custom system by choosing among thousands of high-quality packages provided in the official repositories for the x86-64 architecture.
+                </p>
+                <p>
+                    Arch is backed by pacman, a lightweight, simple and fast package manager that allows to upgrade the entire system with one command. Arch also provides the Arch Build System, a ports-like system to make it easy to build and install packages from source, which can also be synchronized with one command. In addition, the Arch User Repository contains many thousands more of community-contributed PKGBUILD scripts for compiling installable packages from source using the makepkg application. It is also possible for users to build and maintain their own custom repositories with ease. 
+                </p>
+            </section>
+            <section class="main-section" id="Code_Snippets">
+                <header>Code Snippets</header>
+                <ul>
+                    <li>To install a single package or list of packages, including dependencies</li>
+                    <code># pacman -S package_name1 package_name2 ...</code>
+                    <li>Some packages belong to a group of packages that can all be installed simultaneously</li>
+                    <code># packman -S gnome</code>
+                    <li>To remove a single package, leaving all of its dependencies installed</li>
+                    <code># pacman -R package_name</code>
+                    <li>To remove a package and its dependencies which are not required by any other installed package</li>
+                    <code># pacman -Rs package_name</code>
+                    <li>Pacman can update all packages on the system with just one command</li>
+                    <code># pacman -Syu</code>
+                </ul>
+            </section>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
+
